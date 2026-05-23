@@ -3,7 +3,7 @@ import osmtogeojson from 'osmtogeojson';
 import type { Feature, FeatureCollection, Geometry, MultiPolygon, Point, Polygon } from 'geojson';
 import type { BuildingFeature, BuildingProperties, BuildingTagKey } from '../types/building';
 
-const OVERPASS_ENDPOINT = 'https://overpass-api.de/api/interpreter';
+const OVERPASS_ENDPOINT = import.meta.env.VITE_OVERPASS_API_URL ?? '/api/overpass';
 const POLYGON_SEARCH_RADIUS_METERS = 20;
 const POLYGON_BBOX_HALF_SIZE_METERS = 120;
 const POI_SEARCH_RADIUS_METERS = 50;

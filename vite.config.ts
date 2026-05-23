@@ -6,5 +6,12 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,
+    proxy: {
+      '/api/overpass': {
+        target: 'https://overpass-api.de',
+        changeOrigin: true,
+        rewrite: () => '/api/interpreter',
+      },
+    },
   },
 });

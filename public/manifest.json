@@ -1,0 +1,13 @@
+{
+  "name": "キルギスマップ",
+  "short_name": "キルギスマップ",
+  "description": "キルギス国内のおすすめスポットを投稿・共有できる地図PWA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08090d",
+  "theme_color": "#08090d",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
